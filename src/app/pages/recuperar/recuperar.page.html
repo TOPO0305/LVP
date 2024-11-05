@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Volver"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content-wrapper">
+    <div class="recover-container">
+      <h1>¿Olvidaste tu contraseña?</h1>
+      <p>Ingresa tu correo y te enviaremos un enlace para recuperarla.</p>
+
+      <ion-item>
+        <ion-label position="floating">Correo electrónico</ion-label>
+        <ion-input type="email" required></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" class="send-button">Enviar Enlace</ion-button>
+
+      <div class="back-login">
+        <a routerLink="/login">Volver al inicio de sesión</a>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="footer-title">
+      <a href="https://www.instagram.com/lavida.piercing/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon> La Vida Piercing
+      </a>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+

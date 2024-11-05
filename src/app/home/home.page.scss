@@ -1,0 +1,129 @@
+/* Estilos para el header */
+ion-header {
+  --background: #000000;
+  --color: #000000;
+  border-bottom: 1px solid #444;
+}
+
+ion-toolbar {
+  padding: 1px;
+}
+
+ion-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Estilos para el contenido */
+ion-content {
+  --background: #000000;
+  padding: 20px;
+}
+
+/* Cuadro de texto "Quiénes Somos" */
+.about-us {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about-us h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Galería de productos */
+.product-gallery {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.product-gallery h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-circles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.product-circle {
+  width: 100%;
+  padding-top: 100%; /* Mantiene el círculo con aspecto cuadrado */
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.product-circle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Estilos para el footer */
+ion-footer {
+  --background: #111;
+  --color: #ffffff;
+  border-top: 1px solid #444;
+}
+
+ion-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-title a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+ion-title a:hover {
+  color: #ff7f50;
+}
+
+ion-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+
+

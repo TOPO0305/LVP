@@ -1,0 +1,101 @@
+<ion-menu contentId="main-content" side="start">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/home">
+        <ion-icon name="home-outline" slot="start"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-item>
+      <ion-item routerLink="/productos">
+        <ion-icon name="pricetags-outline" slot="start"></ion-icon>
+        <ion-label>Productos</ion-label>
+      </ion-item>
+      <ion-item routerLink="/agendar">
+        <ion-icon name="calendar-outline" slot="start"></ion-icon>
+        <ion-label>Agendar Cita</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <div class="header-content">
+        <img src="assets/logo2.png" alt="Logo" class="logo">
+        Agendar Cita
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" id="main-content">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Agenda tu hora</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Piercing</ion-label>
+        <ion-select placeholder="Selecciona uno" [(ngModel)]="piercingType">
+          <ion-select-option value="facial">Septum</ion-select-option>
+          <ion-select-option value="facial">Monroe</ion-select-option>
+          <ion-select-option value="facial">Medusa</ion-select-option>
+          <ion-select-option value="Corporal">Ombligo</ion-select-option>
+          <ion-select-option value="Corporal">Dermal</ion-select-option>
+          <ion-select-option value="Corporal">Ombligo2</ion-select-option>
+          <ion-select-option value="Orejas">Helix</ion-select-option>
+          <ion-select-option value="Orejas">Tragus</ion-select-option>
+          <ion-select-option value="Orejas">Daith</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Día</ion-label>
+        <ion-select placeholder="Selecciona el día" [(ngModel)]="appointmentDay">
+          <ion-select-option value="lunes">Lunes</ion-select-option>
+          <ion-select-option value="martes">Martes</ion-select-option>
+          <ion-select-option value="miércoles">Miércoles</ion-select-option>
+          <ion-select-option value="jueves">Jueves</ion-select-option>
+          <ion-select-option value="viernes">Viernes</ion-select-option>
+          <ion-select-option value="sábado">Sábado</ion-select-option>
+          <ion-select-option value="domingo">Domingo</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Hora</ion-label>
+        <ion-select placeholder="Selecciona la hora" [(ngModel)]="appointmentTime">
+          <ion-select-option value="10:00">12:00 AM</ion-select-option>
+          <ion-select-option value="11:00">13:00 PM</ion-select-option>
+          <ion-select-option value="12:00">14:00 PM</ion-select-option>
+          <ion-select-option value="13:00">15:00 PM</ion-select-option>
+          <ion-select-option value="14:00">16:00 PM</ion-select-option>
+          <ion-select-option value="15:00">17:00 PM</ion-select-option>
+          <ion-select-option value="16:00">18:00 PM</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button expand="full" (click)="agendar()">
+        Agendar Cita
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      <a href="https://www.instagram.com/lavida.piercing/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon> La Vida Piercing
+      </a>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <ion-title>Panel de Administración</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bienvenido al Panel de Administración</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Aquí puedes gestionar los usuarios, contenidos y más.</p>
+      
+      <ion-button expand="full" routerLink="/usuarios">Gestionar Usuarios</ion-button>
+      <ion-button expand="full" routerLink="/contenido">Gestionar Contenido</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="black">
+    <ion-buttons slot="end">
+      <ion-button routerLink="/logout">Cerrar Sesión</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+
+

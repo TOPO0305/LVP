@@ -1,0 +1,76 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 200px; /* Tamaño de la imagen */
+  height: 200px;
+  border-radius: 50%; /* Hacer la imagen circular */
+  border: 2px solid #d4af37; /* Borde dorado */
+}
+
+// Imagen de fondo
+ion-content {
+  --background: none;
+  background-image: url('/assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// Fondo del formulario
+ion-card {
+  background-color: rgba(26, 26, 26, 0.9); // Fondo negro semitransparente
+  color: #ffffff; // Texto blanco
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+// Encabezados
+ion-title {
+  font-family: 'Cinzel', serif;
+  color: #d4af37; // Color dorado
+}
+
+ion-card-title {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #d4af37; // Color dorado
+}
+
+// Campos del formulario
+ion-item {
+  --background: transparent;
+  color: white;
+}
+
+ion-label {
+  color: #d4af37; // Color dorado
+  font-family: 'Roboto', sans-serif;
+}
+
+ion-input {
+  color: #ffffff;
+}
+
+// Botones
+ion-button {
+  --background: #d4af37; 
+  --border-radius: 8px;
+  --color: #ffffff; 
+  font-family: 'Roboto', sans-serif;
+}
+
+// Footer
+ion-footer {
+  background-color: #1a1a1a;
+}
+
+ion-toolbar {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+  

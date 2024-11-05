@@ -1,0 +1,91 @@
+ion-content {
+  --background: none;
+  background-image: url('/assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  justify-content: center; 
+}
+
+.content-wrapper {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recover-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+ion-item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.send-button {
+  width: 100%;
+  margin-top: 10px;
+  --background: #4CAF50;
+  --background-hover: #388E3C;
+  --border-radius: 8px;
+}
+
+.back-login {
+  margin-top: 15px;
+
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+ion-header, ion-footer {
+  --background: #000;
+  --color: #fff;
+}
+
+ion-toolbar {
+  --ion-background-color: #000;
+  --ion-color: #fff;
+}
+
+.footer-title a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-title a:hover {
+  text-decoration: underline;
+}
+
+ion-back-button {
+  --color: #000000;
+}

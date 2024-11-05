@@ -1,0 +1,39 @@
+// Estilo general del contenido
+ion-content {
+    --background: none;
+    background-image: url('/assets/fondo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  // Estilo para la foto de perfil
+  .profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .avatar-img {
+    width: 100px; /* Tamaño de la imagen del avatar */
+    height: 100px;
+    border-radius: 50%; /* Hacer la imagen circular */
+    border: 1px solid #000000; /* Borde dorado */
+  }
+  
+  // Estilo de la lista de información del usuario
+  ion-item {
+    --background: rgba(0, 0, 0, 0.1); /* Fondo semitransparente */
+    margin-bottom: 5px;
+  }
+  
+  ion-label {
+    color: #000000; /* Color dorado */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  ion-note {
+    color: #000000; /* Texto blanco */
+    font-family: 'Roboto', sans-serif;
+  }
+  

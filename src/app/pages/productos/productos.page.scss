@@ -1,0 +1,81 @@
+/* Estilo General */
+body {
+  font-family: 'Poppins', sans-serif; /* Cambia la tipografía */
+  background-color: #f4f4f8;
+  color: #333;
+}
+
+/* Encabezados */
+ion-card-title {
+  font-size: 18px; /* Reduce el tamaño de los títulos */
+  font-weight: 600; /* Un poco más grueso para destacar */
+  margin-bottom: 5px;
+}
+
+ion-card-subtitle {
+  font-size: 14px; /* Tamaño más pequeño para los subtítulos */
+  color: #666;
+}
+
+/* Texto de Productos */
+ion-label h2 {
+  font-size: 16px; /* Ajusta el tamaño del nombre del producto */
+  margin: 0;
+}
+
+ion-label p {
+  font-size: 14px; /* Descripción más pequeña */
+  color: #555;
+  margin-top: 2px;
+}
+
+.price {
+  color: #3880ff;
+  font-weight: bold;
+  font-size: 15px; /* Ajusta el tamaño del precio */
+  margin-top: 5px;
+  display: block;
+}
+
+/* Estilos del Header */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Estilos para el footer */
+ion-footer {
+  --background: #111;
+  --color: #fff;
+  border-top: 1px solid #444;
+}
+
+ion-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-title a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+ion-title a:hover {
+  color: #ff7f50;
+}
+
+ion-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}

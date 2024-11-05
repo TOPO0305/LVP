@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Inicio de Sesión</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button (click)="ingresar()">
+        Ingresar
+      </ion-button>
+      
+      <!-- Enlace de recuperación de contraseña -->
+      <div class="forgot-password">
+        <a [routerLink]="['/recuperar']">¿Olvidaste tu contraseña?</a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card-content class="logo-container">
+    <img src="./assets/logo2.png" alt="Logo" class="logo-img">
+  </ion-card-content>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="black">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

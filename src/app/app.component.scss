@@ -1,0 +1,37 @@
+/* Estilos para el footer */
+ion-footer {
+  --background: #111;
+  --color: #fff;
+  border-top: 1px solid #444;
+}
+
+.logout-button {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+
+ion-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-title a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+ion-title a:hover {
+  color: #ff7f50;
+}
+
+ion-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
